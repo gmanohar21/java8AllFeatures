@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class predicateInterviewQuestions {
+public class predicateInterviewQuestion1 {
     public static void main(String[] args) {
         List<Integer> number=List.of(74,1,2,3,4,5,6,71,94);
         // it will take only one value(argument) to check if no is even
