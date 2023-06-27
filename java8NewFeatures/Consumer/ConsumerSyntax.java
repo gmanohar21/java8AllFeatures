@@ -18,6 +18,7 @@ public class ConsumerSyntax {
 
         List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "Dave");
 
-        Consumer<String> consume=n->names.forEach(System.out.println(n););
+        Consumer<String> consume = System.out::println;
+        names.forEach(consume);
     }
 }
