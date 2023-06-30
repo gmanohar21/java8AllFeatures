@@ -1,12 +1,13 @@
 package java8NewFeatures.Predicate;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
 public class predicateInterviewQuestion1 {
     public static void main(String[] args) {
-        List<Integer> number = List.of(74, 1, 2, 3, 4, 5, 6, 71, 94);
+        List<Integer> number = Arrays.asList(74, 1, 2, 3, 4, 5, 6, 71, 94);
         // it will take only one value(argument) to check if no is even
         Predicate<Integer> evenPredicate = n -> n % 2 == 0;
         // here it will filter and save it to another list

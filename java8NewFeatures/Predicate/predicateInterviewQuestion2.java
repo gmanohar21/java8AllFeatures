@@ -1,12 +1,13 @@
 package java8NewFeatures.Predicate;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 
 public class predicateInterviewQuestion2 {
     public static void main(String[] args) {
-        List<String> fruit = List.of("Apple", "mango", "Banana", "Guava", "grapes");
+        List<String> fruit = Arrays.asList("Apple", "mango", "Banana", "Guava", "grapes");
         Predicate<String> fruitPredicate = n -> n.toUpperCase().startsWith("M");
         List<String> filteredList = filter(fruit, fruitPredicate);
         System.out.println(filteredList.toString());
